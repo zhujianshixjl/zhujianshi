@@ -1,0 +1,9 @@
+li {
+    list-style:none; 
+    padding:0; 
+    margin:0; 
+    display:block; /* 将链接设为块级元素 */
+    padding:8px 50px; /* 设置内边距 */
+    text-decoration:none; /* 去掉下划线 */
+    display:inline;
+}
