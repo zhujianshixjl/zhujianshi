@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/houtai/update" method="post">
+        <input type="hidden" value="<%= datas[0].id %>" name="id" >
+        时间:<input type="text" name="time" value="<%= datas[0].时间 %>" /><br>
+        水电支出:<input type="text" name="shuidianzhichu" value="<%= datas[0].水电支出 %>" /><br>
+        材料支出:<input type="text" name="cailiaozhihchu" value="<%= datas[0].材料支出 %>" /><br>
+        购置支出:<input type="text" name="shebeizhichu" value="<%= datas[0].购置设备支出 %>" /><br>
+        营业额:<input type="text" name="yingyee" value="<%= datas[0].营业额 %>" /><br>
+        利润:<input type="text" name="liruen" value="<%= datas[0].利润 %>" /><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

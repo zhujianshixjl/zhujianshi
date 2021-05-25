@@ -1,0 +1,79 @@
+.a{
+    font-size: 20px;
+    display: inline;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+.b{
+    color: rgb(252, 248, 248);
+    background-color: rgb(89, 150, 230);
+    border-color: rgb(69, 174, 223);
+    height: 30px;
+    width: 60px;
+    border-radius: 10 px;
+}
+.c{
+    color: rgb(63, 140, 202);
+    
+}
+.d{
+    color: rgb(245, 244, 244);
+    border: rgb(18, 126, 189);
+    background-color: rgb(83, 154, 236);
+    height: 60px;
+    width: 90px;
+}
+select,input{
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+}
+button{
+    color: rgb(248, 240, 240);
+    border-radius: 6px;
+    background-color: rgb(19, 150, 226);
+    border: cornflowerblue;
+    height: 40px;
+    width: 80px;
+    
+}
+table{
+    padding: 50px 50px 0 50px;
+    align-self: center;
+    width: 1700px;
+    border:solid #f7f7f77c; border-width:1px 0px 0px 1px;
+    height: 400px;
+    
+}
+td{
+    padding-left: 40px;
+}
+.f{
+    height: 60px;
+    padding-top: 10px;
+}
+select:focus{
+    border-color: #66afe9;
+    border-style: solid;
+    outline: none;
+    
+}
+.f{
+    padding: 30px;
+    margin-left: -28px;
+}
+li{
+    display:inline; 
+    font-size: 30px;
+    padding: 188px;  
+    
+}
+.g{
+    padding-left: 50px;
+    font-size: 22px;
+}
+lab{
+    padding: 50px;
+    font-size: 20px;
+}

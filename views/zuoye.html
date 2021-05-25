@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="http://localhost:3000/css/zuoye.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="g">
+         每月账单
+   </div>
+   <td><a href="/houtai/add" style="padding: 50px">新增</a></td>
+   <form action="/houtai/search" method="post">
+    <lab>时间：</lab><input type="text" name="time" >
+    <input type="submit" value="查询">
+    </form> 
+   
+    <HR style="FILTER: alpha(opacity=0,finishopacity=100,style=1)" width="100%" color=gray SIZE=2>
+    <div>
+        <table border="1"  cellspacing="0"  cellpadding="20"  style="text-align:center" id="showTable">
+            <tr>
+                <th>时间</th>
+                <th>水电支出</th>
+                <th>材料支出</th>
+                <th>购置设备支出</th>
+                <th>营业额</th>
+                <th>利润</th>
+                <th>操作</th>
+            </tr>
+            <%  for(var i=0;i< datas.length;i++) {%>
+            <tr>
+                <td class="queryOne"><%= datas[i].时间 %></td>
+                <td><%= datas[i].水电支出 %></td>
+                <td><%= datas[i].材料支出 %></td>
+                <td><%= datas[i].购置设备支出 %></td>
+                <td><%= datas[i].营业额 %></td>
+                <td><%= datas[i].利润 %></td>
+                
+                <td><a href="/houtai/del/<%= datas[i].id %>">删除</a></td>
+                <td><a href="/houtai/toUpdate/<%= datas[i].id %>">修改</a></td>
+            </tr>
+            <% }%>
+            
+    </div>
+    <script src="http://localhost:3000/js/zuoye.js"></script>
+    <script src="http://localhost:3000/js/index.js"></script>
+</body>
+
+</html>
