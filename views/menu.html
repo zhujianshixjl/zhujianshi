@@ -121,181 +121,70 @@ Author URL: http://w3layouts.com
                 <!-- Section starts: Breakfast -->
                 <div class="col-lg-6 menu-section">
                     <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu1.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Tomato Toast “Ricotta”</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$36</h6>
-                                </div>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <%  for(var i=0;i< datas.length;i++) {%>
                     <!-- Item ends -->
                     <!-- Item starts -->
                     <div class="row menu-item">
+                        
                         <div class="col-3 p-0 position-relative">
-                            <img src="images/menu2.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
+                            <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                            <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
                         </div>
                         <div class="col-9 pl-4">
                             <div class="row no-gutters">
                                 <div class="col-9 menu-item-name">
-                                    <h6>Avocado Toast with Egg</h6>
+                                    <h6><%= datas[i].name %></h6>
                                 </div>
                                 <div class="col-3 menu-item-price text-right">
-                                    <h6>$28</h6>
+                                    <h6><%= datas[i].price %></h6>
                                 </div>
                             </div>
                             <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
+                                <p><%= datas[i].jianjie %></p>
                             </div>
                         </div>
+                        <!-- Item ends -->
+                        <!-- Item starts -->
+                        
                     </div>
-                    <!-- Item ends -->
-                    <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu3.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Nut, Banana & Seed Toast</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$18</h6>
-                                </div>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item ends -->
-                    <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu4.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Berry & Yogurt Smoothie</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$76</h6>
-                                </div>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
+                    <% }%>
+                    
                     <!-- Item ends -->
                 </div>
+            
+            
+        
                 <!-- Section ends: Breakfast -->
 
                 <!-- Section starts: Breakfast -->
                 <div class="col-lg-6 menu-section pl-lg-5">
                     <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu5.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Berry Breakfast Parfait</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$13</h6>
-                                </div>
+                    <%  for(var i=0;i< datas.length;i++) {%>
+                        <div class="row menu-item">
+                            <div class="col-3 p-0 position-relative">
+                                <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                                <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
                             </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item ends -->
-                    <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu6.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Peanut Butter & Banana</h6>
+                            <div class="col-9 pl-4">
+                                <div class="row no-gutters">
+                                    <div class="col-9 menu-item-name">
+                                        <h6><%= datas[i].name %></h6>
+                                    </div>
+                                    <div class="col-3 menu-item-price text-right">
+                                        <h6><%= datas[i].price %></h6>
+                                    </div>
                                 </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$32</h6>
+                                <div class="menu-item-description">
+                                    <p><%= datas[i].jianjie %></p>
                                 </div>
                             </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
+                        
+                        
                         </div>
-                    </div>
-                    <!-- Item ends -->
-                    <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu7.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Quinoa Fruit Salad</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$76</h6>
-                                </div>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item ends -->
-                    <!-- Item starts -->
-                    <div class="row menu-item">
-                        <div class="col-3 p-0 position-relative">
-                            <img src="images/menu8.jpg" class="img-responsive" alt="">
-                            <a href="#order" class="btn button-style button-style-2">Add</a>
-                        </div>
-                        <div class="col-9 pl-4">
-                            <div class="row no-gutters">
-                                <div class="col-9 menu-item-name">
-                                    <h6>Pumpkin Yogurt Parfait</h6>
-                                </div>
-                                <div class="col-3 menu-item-price text-right">
-                                    <h6>$26</h6>
-                                </div>
-                            </div>
-                            <div class="menu-item-description">
-                                <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item ends -->
+                     <% }%>
+               
                 </div>
-                <!-- Section ends: Breakfast -->
-            </div>
+            
 
             <div class="another-sec">
                 <h3 class="title-big mb-2">Lunch</h3>
@@ -303,67 +192,29 @@ Author URL: http://w3layouts.com
                     <!-- Section starts: Lunch -->
                     <div class="col-lg-6 menu-section pr-lg-5">
                         <!-- Item starts -->
+                        <%  for(var i=0;i< datas.length;i++) {%>
                         <div class="row menu-item">
                             <div class="col-3 p-0 position-relative">
-                                <img src="images/menu9.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
+                                <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                                <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
                             </div>
                             <div class="col-9 pl-4">
                                 <div class="row no-gutters">
                                     <div class="col-9 menu-item-name">
-                                        <h6>Grilled Lamb & Feta Pita</h6>
+                                        <h6><%= datas[i].name %></h6>
                                     </div>
                                     <div class="col-3 menu-item-price text-right">
-                                        <h6>$63</h6>
+                                        <h6><%= datas[i].price %></h6>
                                     </div>
                                 </div>
                                 <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
+                                    <p><%= datas[i].jianjie %></p>
                                 </div>
                             </div>
                         </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu10.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>The Ultimate Veggie</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$36</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu11.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Chicken Salad Lunch Box</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$23</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
+                        <% }%>
                         <!-- Item ends -->
                     </div>
                     <!-- Section ends: Lunch -->
@@ -371,215 +222,98 @@ Author URL: http://w3layouts.com
                     <!-- Section starts: Lunch -->
                     <div class="col-lg-6 menu-section pl-lg-5">
                         <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu12.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Coriander Chicken and Rice</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$46</h6>
-                                    </div>
+                        <%  for(var i=0;i< datas.length;i++) {%>
+                            <div class="row menu-item">
+                                <div class="col-3 p-0 position-relative">
+                                    <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                                    <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
                                 </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu13.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>The plate of barbeque</h6>
+                                <div class="col-9 pl-4">
+                                    <div class="row no-gutters">
+                                        <div class="col-9 menu-item-name">
+                                            <h6><%= datas[i].name %></h6>
+                                        </div>
+                                        <div class="col-3 menu-item-price text-right">
+                                            <h6><%= datas[i].price %></h6>
+                                        </div>
                                     </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$26</h6>
+                                    <div class="menu-item-description">
+                                        <p><%= datas[i].jianjie %></p>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
                             </div>
-                        </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu14.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Chicken grill with sauce</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$67</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                    </div>
-                    <!-- Section ends: Lunch -->
+                            
+                            
+                        <% }%>
+                   </div>
                 </div>
-            </div>
-
-            <div class="another-sec">
-                <h3 class="title-big mb-2">Dinner</h3>
-                <div class="row menu-body">
-                    <!-- Section starts: Dinner -->
-                    <div class="col-lg-6 menu-section pr-lg-5">
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu10.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>The Ultimate Veggie</h6>
+            </div>   
+                
+                <div class="another-sec">
+                    <h3 class="title-big mb-2">Dinner</h3>
+                    <div class="row menu-body">
+                        <!-- Section starts: Lunch -->
+                        <div class="col-lg-6 menu-section pr-lg-5">
+                            <!-- Item starts -->
+                            <%  for(var i=0;i< datas.length;i++) {%>
+                            <div class="row menu-item">
+                                <div class="col-3 p-0 position-relative">
+                                    <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                                    <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
+                                </div>
+                                <div class="col-9 pl-4">
+                                    <div class="row no-gutters">
+                                        <div class="col-9 menu-item-name">
+                                            <h6><%= datas[i].name %></h6>
+                                        </div>
+                                        <div class="col-3 menu-item-price text-right">
+                                            <h6><%= datas[i].price %></h6>
+                                        </div>
                                     </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$52</h6>
+                                    <div class="menu-item-description">
+                                        <p><%= datas[i].jianjie %></p>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
                             </div>
+                            
+                            
+                            <% }%>
+                            <!-- Item ends -->
                         </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu14.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Chicken grill with sauce</h6>
+                        <!-- Section ends: Lunch -->
+    
+                        <!-- Section starts: Lunch -->
+                        <div class="col-lg-6 menu-section pl-lg-5">
+                            <!-- Item starts -->
+                            <%  for(var i=0;i< datas.length;i++) {%>
+                                <div class="row menu-item">
+                                    <div class="col-3 p-0 position-relative">
+                                        <img src="<%= datas[i].image %>" class="img-responsive" alt="">
+                                        <a href="#order" class="btn button-style button-style-2"><%= datas[i].add %></a>
                                     </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$46</h6>
+                                    <div class="col-9 pl-4">
+                                        <div class="row no-gutters">
+                                            <div class="col-9 menu-item-name">
+                                                <h6><%= datas[i].name %></h6>
+                                            </div>
+                                            <div class="col-3 menu-item-price text-right">
+                                                <h6><%= datas[i].price %></h6>
+                                            </div>
+                                        </div>
+                                        <div class="menu-item-description">
+                                            <p><%= datas[i].jianjie %></p>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
+                                
+                                
+                            <% }%>
                         </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu7.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Quinoa Fruit Salad</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$56</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
                     </div>
-                    <!-- Section ends: Dinner -->
-
-                    <!-- Section starts: Dinner -->
-                    <div class="col-lg-6 menu-section pl-lg-5">
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu2.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Avocado Toast with Egg</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$26</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu1.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Tomato Toast Ricotta</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$26</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                        <!-- Item starts -->
-                        <div class="row menu-item">
-                            <div class="col-3 p-0 position-relative">
-                                <img src="images/menu9.jpg" class="img-responsive" alt="">
-                                <a href="#order" class="btn button-style button-style-2">Add</a>
-                            </div>
-                            <div class="col-9 pl-4">
-                                <div class="row no-gutters">
-                                    <div class="col-9 menu-item-name">
-                                        <h6>Grilled Lamb & Feta Pita</h6>
-                                    </div>
-                                    <div class="col-3 menu-item-price text-right">
-                                        <h6>$72</h6>
-                                    </div>
-                                </div>
-                                <div class="menu-item-description">
-                                    <p>Lorem ipsum dolor sit amet, consectetur tredjh adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item ends -->
-                    </div>
-                    <!-- Section ends: Dinner -->
                 </div>
-            </div>
-        </div>
-    </div>
+        </div>          
+    </div>  
+
     <!-- //menu -->
     <!-- promocode section -->
     <section class="w3l-promocode">
@@ -731,12 +465,12 @@ Author URL: http://w3layouts.com
     <!-- //move top -->
 
     <!-- common jquery plugin -->
-    <script src=js/jquery-3.3.1.min.js"></script>
+    <script src=js/jquery-3.3.1.min.js></script>
     <!-- //common jquery plugin -->
 
     <!-- theme switch js (light and dark)-->
     <script src="js/theme-change.js"></script>
-    <script>
+    <script src=js/jquery-3.3.1.min.js>
         function autoType(elementClass, typingSpeed) {
             var thhis = $(elementClass);
             thhis.css({
@@ -774,7 +508,7 @@ Author URL: http://w3layouts.com
     <!-- //theme switch js (light and dark)-->
 
     <!-- MENU-JS -->
-    <script>
+    <script src=js/jquery-3.3.1.min.js>
         $(window).on("scroll", function () {
             var scroll = $(window).scrollTop();
 
@@ -803,7 +537,7 @@ Author URL: http://w3layouts.com
     <!-- //MENU-JS -->
 
     <!-- disable body scroll which navbar is in active -->
-    <script>
+    <script src=js/jquery-3.3.1.min.js>
         $(function () {
             $('.navbar-toggler').click(function () {
                 $('body').toggleClass('noscroll');
